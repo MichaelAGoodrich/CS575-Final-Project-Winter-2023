@@ -12,17 +12,23 @@
 
 """
 import pandas as pd
+import numpy as np
 
 class DatabaseManager:
     def __init__(self,file_name):
         self.dataframe = pd.read_csv(file_name)
+        # Some data relabelling from https://www.kaggle.com/code/chingchunyeh/suicide-rates-overview-1985-to-2016
+        self.dataframe.rename(columns={"suicides/100k pop":"suicides_pop","HDI for year":"HDI_for_year",
+                  " gdp_for_year ($) ":"gdp_for_year"," gdp_per_capita ($) ":"gdp_per_capita",
+                    "gdp_per_capita ($)":"gdp_per_capita"}, inplace=True)
+        self.dataframe["gdp_for_year"] = self.dataframe["gdp_for_year"].str.replace(",","").astype(np.int64) 
     
     ###############################
     # Public Extraction Utilities #
     ###############################
     def printDatabaseOverview(self):
-        self.__showHead()
-        self.__showInfo()
+        self.showHead()
+        self.showInfo()
 
     def getNodesOfType(self,category):
         """ An object of interest is identified by a node """
@@ -57,12 +63,12 @@ class DatabaseManager:
     ##############################
     # Private Overview Utilities #
     ##############################
-    def __showHead(self): 
+    def showHead(self): 
         # This function returns the first n rows for the object based on position. 
         # It is useful for quickly testing if your object has the right type of data in it.
         # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.head.html
         print(self.dataframe.head())
-    def __showInfo(self):
+    def showInfo(self):
         # This method prints information about a DataFrame including the index dtype and 
         # columns, non-null values and memory usage.
         # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html
