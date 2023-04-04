@@ -52,9 +52,7 @@ class DatabaseManager:
     def showUniqueNodesOfType(self,category):
         if category not in set(self.dataframe.columns): raise ValueError
         else: 
-            print("Unique items in", category, 'are')
-            for item in self.dataframe[category].unique():
-                print('\t',item)
+            print(self.dataframe.value_counts(category))
 
     def getNodesOfType(self,category):
         """ An object of interest is identified by a node """

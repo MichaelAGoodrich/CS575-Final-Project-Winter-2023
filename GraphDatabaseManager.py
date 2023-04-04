@@ -61,15 +61,15 @@ class GraphManager:
     ##########################
     def __initalizeGraph(self):
         # Step 1: Initialize node set according to the graph schema
-        for category in {'age','year','sex','suicides_per_100k','country'}:
+        for category in {'age','year','sex','suicides_per_100k_bins','country'}:
             node_set = self.database.getNodesOfType(category)
             self.__addNodes(node_set,category)
         
-        # Step 2: Initialize edge set
-        category_2 = 'rank'
-        for category_1 in {'genre','writers','directors','casts'}:
-            edges = self.database.getEdges(category_1,category_2)
-            self.__addEdges(edges)
+        # Step 2: Initialize edge set TODO modify
+        #category_2 = 'rank'
+        #for category_1 in {'genre','writers','directors','casts'}:
+        #    edges = self.database.getEdges(category_1,category_2)
+        #    self.__addEdges(edges)
     def __addNodes(self,node_set,node_type):
         if node_type == 'name': node_type = 'rank'
         self.G.add_nodes_from(node_set)

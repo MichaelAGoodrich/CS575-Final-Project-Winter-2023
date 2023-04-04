@@ -1,8 +1,4 @@
 # Run.py. Place that Mike uses to experiment with code.
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np 
 
 def main():
     # Exercise the necessary parts of the Database manager
@@ -17,5 +13,13 @@ def main():
     del database
 
     # Extract a knowledge graph
+    from GraphDatabaseManager import GraphManager
+    import networkx as nx
+    from matplotlib import pyplot as plt
+
+    #graph_database = GraphManager('datasets/suicide_rates_by_category.csv')
+    #node_list = graph_database.getGraph_of_Database()
+    #G = nx.Graph()
+    #G.add_nodes_from(node_list)
 
 main()
