@@ -24,7 +24,7 @@ def main():
     G.add_nodes_from(node_list)
     pos = nx.nx_agraph.graphviz_layout(G,prog='neato')
     color_map = ['y' for node in list(G.nodes())]
-    nx.draw(G,pos,node_color = color_map, alpha = 0.8, node_size = 30)
+    nx.draw(G,pos,node_color = color_map, alpha = 0.8, node_size = 40)
     plt.show()
             
 
