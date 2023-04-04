@@ -22,7 +22,8 @@ class DatabaseManager:
                   " gdp_for_year ($) ":"gdp_for_year"," gdp_per_capita ($) ":"gdp_per_capita",
                     "gdp_per_capita ($)":"gdp_per_capita"}, inplace=True)
         self.dataframe["gdp_for_year"] = self.dataframe["gdp_for_year"].str.replace(",","").astype(np.int64) 
-    
+        self.cleanDatabase()
+        self.binCategory('suicides_per_100k',binlist = [0,25,75,100,125,150,300])
     ###############################
     # Public Extraction Utilities #
     ###############################
@@ -60,7 +61,7 @@ class DatabaseManager:
         if category not in set(self.dataframe.columns): raise ValueError
         
         node_set = set()
-        entries = self.dataframe[category]
+        entries = self.dataframe[category].unique() # No need to add it again if not unique
         for i in range(len(entries)):
             iterator = self.__getCategoryIterator(category,entries[i])
             for entry in iterator:

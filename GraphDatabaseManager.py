@@ -61,7 +61,7 @@ class GraphManager:
     ##########################
     def __initalizeGraph(self):
         # Step 1: Initialize node set according to the graph schema
-        for category in {'age','year','sex','suicides_per_100k_bins','country'}:
+        for category in {'age','year','sex','country','suicides_per_100k_bins'}:
             node_set = self.database.getNodesOfType(category)
             self.__addNodes(node_set,category)
         
