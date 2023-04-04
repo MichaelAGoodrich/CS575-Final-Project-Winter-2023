@@ -18,7 +18,7 @@ class DatabaseManager:
     def __init__(self,file_name):
         self.dataframe = pd.read_csv(file_name)
         # Some data relabelling from https://www.kaggle.com/code/chingchunyeh/suicide-rates-overview-1985-to-2016
-        self.dataframe.rename(columns={"suicides/100k pop":"suicides_pop","HDI for year":"HDI_for_year",
+        self.dataframe.rename(columns={"suicides/100k pop":"suicides_per_100k","HDI for year":"HDI_for_year",
                   " gdp_for_year ($) ":"gdp_for_year"," gdp_per_capita ($) ":"gdp_per_capita",
                     "gdp_per_capita ($)":"gdp_per_capita"}, inplace=True)
         self.dataframe["gdp_for_year"] = self.dataframe["gdp_for_year"].str.replace(",","").astype(np.int64) 
@@ -29,6 +29,32 @@ class DatabaseManager:
     def printDatabaseOverview(self):
         self.showHead()
         self.showInfo()
+    def cleanDatabase(self):
+        """ A subjective set of operations to eliminate certain types of rows """
+        # The G.I. Generation doesn't have age categories for all groups
+        # I don't know why but it feels like we should drop that so that
+        # all generations have all age groups
+        self.dataframe = self.dataframe[self.dataframe['generation'] != 'G.I. Generation']
+    def binCategory(self,category, binlist = [0,25,75,100,125,150,300]):
+        if category not in set(self.dataframe.columns): raise ValueError
+        else:
+            names = []
+            for i in range(len(binlist)-1):
+                binname = str(binlist[i]) + '-' + str(binlist[i+1])
+                names.append(binname)
+            new_category = category + "_bins"
+            self.dataframe[new_category] = pd.cut(self.dataframe[category],binlist,include_lowest=True,labels = names)
+    def showValuesOfType(self,category):
+        if category not in set(self.dataframe.columns): raise ValueError
+        else:
+            for item in self.dataframe[category]:
+                print(item)
+    def showUniqueNodesOfType(self,category):
+        if category not in set(self.dataframe.columns): raise ValueError
+        else: 
+            print("Unique items in", category, 'are')
+            for item in self.dataframe[category].unique():
+                print('\t',item)
 
     def getNodesOfType(self,category):
         """ An object of interest is identified by a node """

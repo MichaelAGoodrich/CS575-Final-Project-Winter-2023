@@ -51,17 +51,17 @@ class GraphManager:
     ##################################
     def exportToGephi(self,gephi_filename):
         #nx.write_gexf(G,gephi_filename)
-        nx.write_gexf(self.G,"/Users/mike/Dropbox/Mac/Documents/Classes/CS 575/Winter 2023/Code/GraphDataScience_withSNAP/figures/MoviePersonnelGraph.gexf")   
+        nx.write_gexf(self.G,"figures/SuicideRiskGraph.gexf")   
     def exportSubgraphToGephi(self,H,gephi_filename):
         #nx.write_gexf(G,gephi_filename)
-        nx.write_gexf(H,"/Users/mike/Dropbox/Mac/Documents/Classes/CS 575/Winter 2023/Code/GraphDataScience_withSNAP/figures/MoviePersonnelGraph.gexf")   
+        nx.write_gexf(H,"figures/SuicideRiskGraph_Subgraph.gexf")   
     
     ##########################
     # Private Helper Methods #
     ##########################
     def __initalizeGraph(self):
-        # Step 1: Initialize node set
-        for category in {'genre','writers','directors','casts','rank'}:
+        # Step 1: Initialize node set according to the graph schema
+        for category in {'age','year','sex','suicides_per_100k','country'}:
             node_set = self.database.getNodesOfType(category)
             self.__addNodes(node_set,category)
         
