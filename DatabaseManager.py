@@ -74,8 +74,8 @@ class DatabaseManager:
         if category_1 == category_2: raise ValueError
         
         ### Step 2: Identify pairwise relationships
-        entries_1 = self.dataframe[category_1]
-        entries_2 = self.dataframe[category_2]
+        entries_1 = list(self.dataframe[category_1])
+        entries_2 = list(self.dataframe[category_2])
         set_of_edges = set()
         for i in range(len(entries_1)):
             iterator_1 = self.__getCategoryIterator(category_1,entries_1[i])

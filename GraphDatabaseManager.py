@@ -44,6 +44,18 @@ class GraphManager:
         return subgraph
     def getGraph_of_Database(self):
         return self.G
+    def getColormap_by_Nodetype(self):
+        """{'age','year','sex','country','suicides_per_100k_bins'}"""
+        nodelist = list(self.G.nodes())
+        for i in range(len(self.G.nodes())):
+            node = nodelist[i]
+            if node in self.nodes_by_attribute_dict['age']: self.colormap[i] = 'y'
+            elif node in self.nodes_by_attribute_dict['year']: self.colormap[i] = 'm'
+            elif node in self.nodes_by_attribute_dict['sex']: self.colormap[i] = 'g'
+            elif node in self.nodes_by_attribute_dict['country']: self.colormap[i] = 'c'
+            elif node in self.nodes_by_attribute_dict['suicides_per_100k_bins']: self.colormap[i] = 'b'
+        return self.colormap
+
 
 
     ##################################
@@ -66,12 +78,11 @@ class GraphManager:
             self.__addNodes(node_set,category)
         
         # Step 2: Initialize edge set TODO modify
-        #category_2 = 'rank'
-        #for category_1 in {'genre','writers','directors','casts'}:
-        #    edges = self.database.getEdges(category_1,category_2)
-        #    self.__addEdges(edges)
+        category_2 = 'country'
+        for category_1 in {'age','year','sex','suicides_per_100k_bins'}:
+            edges = self.database.getEdges(category_1,category_2)
+            self.__addEdges(edges)
     def __addNodes(self,node_set,node_type):
-        if node_type == 'name': node_type = 'rank'
         self.G.add_nodes_from(node_set)
         self.nodes_by_attribute_dict[node_type] = node_set
     def __addEdges(self,edge_set):
