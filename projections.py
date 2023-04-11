@@ -24,8 +24,11 @@ def get_color_map(G, manager):
     return colormap
 
 
-def draw(G, manager, with_labels=False, figname=None, show=True):
-    pos = nx.nx_agraph.graphviz_layout(G, prog="neato")
+def draw(G, manager, with_labels=False, figname=None, show=True, is_bipartite=False):
+    if is_bipartite:
+        pos = nx.bipartite_layout(G, manager.nodes_by_attribute_dict["age"])
+    else:
+        pos = nx.nx_agraph.graphviz_layout(G, prog="neato")
     color_map = get_color_map(G, manager)
     plt.figure(1)
     nx.draw_networkx(
@@ -56,14 +59,26 @@ manager = GraphManager("datasets/suicide_rates_by_category.csv")
 
 # age to risk bipartite
 age_risk_bipartite = manager.extractBipartiteGraph("age", "suicides_per_100k_bins")
+assert nx.is_bipartite(age_risk_bipartite)
 draw(
     age_risk_bipartite,
     manager,
     with_labels=True,
     figname="figures/age_risk_bipartite.png",
     show=False,
+    is_bipartite=True,
 )
 
+age_risk_projection = manager.extractProjectionGraph(["age", "suicides_per_100k_bins"])
+draw(
+    age_risk_projection,
+    manager,
+    with_labels=True,
+    figname="figures/age_risk_projection.png",
+    show=False,
+)
+
+# Just
 age_risk_projection = manager.extractProjectionGraph(["age", "suicides_per_100k_bins"])
 draw(
     age_risk_projection,
