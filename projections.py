@@ -5,6 +5,45 @@ import numpy as np
 from GraphDatabaseManager import GraphManager
 
 
+def extractProjectionGraph(G, categories, database):
+    """Project out the movie to see relationships
+    between other database categories
+    """
+    edge_set = __extractProjectionEdges(G, categories, database)
+    H = __edgesetToSubgraph(edge_set)
+    return H
+
+
+def __edgesetToSubgraph(edge_set):
+    H = nx.empty_graph()
+    for edge in edge_set:
+        H.add_edge(edge[0], edge[1])
+    return H
+
+
+def __extractProjectionEdges(G, categories, database):
+    """Project out the movie to see relationships
+    between other database categories
+    """
+    # The projections is performed by finding all paths two steps or fewer
+    two_step_paths = dict(nx.all_pairs_shortest_path_length(G, cutoff=2))
+    node_set = set()
+    # Extract all the node types of interest
+    for node_type in categories:
+        node_set = node_set.union(database.getNodesOfType(node_type))
+    # Select only two step paths between nodes of interest
+    edge_set = set()
+    for node_source in node_set:
+        destination_dictionary = two_step_paths[node_source]
+        node_destinations = set(
+            [k for k, v in destination_dictionary.items() if v == 2]
+        )
+        node_destinations = node_destinations.intersection(node_set)
+        for node_destination in node_destinations:
+            edge_set.add((node_source, node_destination))
+    return edge_set
+
+
 def get_color_map(G, manager):
     """{'age','year','sex','country','suicides_per_100k_bins'}"""
     nodelist = list(G.nodes())
@@ -78,12 +117,23 @@ draw(
     show=False,
 )
 
-# Just
-age_risk_projection = manager.extractProjectionGraph(["age", "suicides_per_100k_bins"])
+# Just age
+age_projection = manager.extractProjectionGraph(["age"])
 draw(
-    age_risk_projection,
+    age_projection,
     manager,
     with_labels=True,
-    figname="figures/age_risk_projection.png",
+    figname="figures/age_projection.png",
+    show=False,
+)
+# Just age bipartite
+age_bipartite_projection = extractProjectionGraph(
+    age_risk_bipartite, ["age"], manager.database
+)
+draw(
+    age_bipartite_projection,
+    manager,
+    with_labels=True,
+    figname="figures/age_bipartite_projection.png",
     show=False,
 )
