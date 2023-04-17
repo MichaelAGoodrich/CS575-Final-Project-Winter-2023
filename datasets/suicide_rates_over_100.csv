@@ -1,0 +1,187 @@
+country,year,sex,age,suicides_no,population,suicides/100k pop,country-year,HDI for year,gdp_for_year ($),gdp_per_capita ($),generation
+Aruba,1995,male,75+ years,2,889,224.97,Aruba1995,,"1,320,670,391","$17,949",G.I. Generation
+Seychelles,2006,male,75+ years,2,976,204.92,Seychelles2006,,"1,016,418,229","$12,442",Silent
+Suriname,2012,male,75+ years,10,5346,187.06,Suriname2012,0.711,"4,980,000,000","$10,227",Silent
+Republic of Korea,2011,male,75+ years,1276,688365,185.37,Republic of Korea2011,,"1,202,463,682,634","$25,157",Silent
+Republic of Korea,2010,male,75+ years,1152,631853,182.32,Republic of Korea2010,,"1,094,499,338,703","$22,994",Silent
+Hungary,1992,male,75+ years,317,178482,177.61,Hungary1992,,"38,724,945,368","$3,970",G.I. Generation
+Hungary,1993,male,75+ years,300,168944,177.57,Hungary1993,,"40,119,073,326","$4,116",G.I. Generation
+Hungary,1991,male,75+ years,333,188235,176.91,Hungary1991,,"34,748,508,332","$3,561",G.I. Generation
+Republic of Korea,2005,male,75+ years,780,442349,176.33,Republic of Korea2005,,"898,137,194,716","$19,460",Silent
+Hungary,1994,male,75+ years,292,165660,176.26,Hungary1994,,"43,160,392,124","$4,431",G.I. Generation
+Republic of Korea,2009,male,75+ years,1006,578635,173.86,Republic of Korea2009,,"901,934,953,365","$19,036",Silent
+Republic of Korea,2007,male,75+ years,860,497517,172.86,Republic of Korea2007,,"1,122,679,154,632","$23,982",Silent
+Republic of Korea,2004,male,75+ years,722,417832,172.8,Republic of Korea2004,,"764,880,644,711","$16,708",Silent
+Republic of Korea,2003,male,75+ years,674,394465,170.86,Republic of Korea2003,,"680,520,724,062","$14,971",Silent
+Hungary,1995,male,75+ years,282,169919,165.96,Hungary1995,0.74,"46,418,916,500","$4,767",G.I. Generation
+Hungary,1999,male,75+ years,302,185652,162.67,Hungary1999,,"49,170,434,391","$5,147",G.I. Generation
+Hungary,1997,male,75+ years,296,182808,161.92,Hungary1997,,"47,290,180,589","$4,856",G.I. Generation
+Saint Vincent and Grenadines,2002,male,75+ years,2,1270,157.48,Saint Vincent and Grenadines2002,,"461,883,444","$4,723",Silent
+Republic of Korea,2008,male,75+ years,828,534462,154.92,Republic of Korea2008,,"1,002,219,052,968","$21,278",Silent
+Republic of Korea,2006,male,75+ years,722,466922,154.63,Republic of Korea2006,,"1,011,797,457,139","$21,753",Silent
+Republic of Korea,2012,male,75+ years,1137,745816,152.45,Republic of Korea2012,,"1,222,807,284,485","$25,464",Silent
+Lithuania,1996,male,35-54 years,664,438770,151.33,Lithuania1996,,"8,385,109,020","$2,484",Boomers
+Suriname,1990,male,75+ years,3,2000,150,Suriname1990,,"388,300,000","$1,114",G.I. Generation
+Republic of Korea,2013,male,75+ years,1191,806960,147.59,Republic of Korea2013,,"1,305,604,981,272","$27,060",Silent
+Lithuania,1995,male,35-54 years,632,436306,144.85,Lithuania1995,0.701,"7,870,782,261","$2,324",Boomers
+Slovenia,2001,male,75+ years,45,31096,144.71,Slovenia2001,,"20,875,387,068","$10,979",Silent
+Singapore,1985,male,75+ years,23,15900,144.65,Singapore1985,,"19,138,296,376","$8,142",G.I. Generation
+Lithuania,1997,male,35-54 years,637,440546,144.59,Lithuania1997,,"10,120,274,493","$3,008",Boomers
+Hungary,1996,male,75+ years,254,176106,144.23,Hungary1996,,"46,659,796,773","$4,792",G.I. Generation
+Hungary,2000,male,75+ years,272,188686,144.15,Hungary2000,0.769,"47,310,623,887","$4,966",G.I. Generation
+Lithuania,1995,male,75+ years,67,47214,141.91,Lithuania1995,0.701,"7,870,782,261","$2,324",G.I. Generation
+Republic of Korea,2015,male,75+ years,1329,944284,140.74,Republic of Korea2015,,"1,382,764,027,114","$28,410",Silent
+Singapore,1988,male,75+ years,30,21600,138.89,Singapore1988,,"25,337,226,971","$10,586",G.I. Generation
+Austria,1993,male,75+ years,200,147907,135.22,Austria1993,,"190,379,720,927","$25,611",G.I. Generation
+Hungary,2001,male,75+ years,276,205366,134.39,Hungary2001,,"53,821,315,066","$5,546",Silent
+Lithuania,2002,male,35-54 years,613,456468,134.29,Lithuania2002,,"14,278,357,284","$4,360",Boomers
+Aruba,2000,female,75+ years,2,1499,133.42,Aruba2000,,"1,873,452,514","$22,333",G.I. Generation
+Cuba,1993,male,75+ years,257,192900,133.23,Cuba1993,,"22,367,254,865","$2,236",G.I. Generation
+Lithuania,1999,male,35-54 years,592,446764,132.51,Lithuania1999,,"10,972,878,636","$3,292",Boomers
+Lithuania,2000,male,35-54 years,595,451103,131.9,Lithuania2000,0.754,"11,539,211,480","$3,481",Boomers
+Bulgaria,1987,male,75+ years,228,172900,131.87,Bulgaria1987,,"28,101,000,000","$3,355",G.I. Generation
+Luxembourg,1997,male,75+ years,10,7600,131.58,Luxembourg1997,,"19,731,912,494","$50,260",G.I. Generation
+Montenegro,2007,male,75+ years,15,11416,131.39,Montenegro2007,,"3,680,710,375","$6,268",Silent
+Bulgaria,1985,male,75+ years,218,166200,131.17,Bulgaria1985,0.686,"17,155,421,053","$2,044",G.I. Generation
+Republic of Korea,2002,male,75+ years,489,374816,130.46,Republic of Korea2002,,"609,020,054,512","$13,501",Silent
+Austria,1991,male,75+ years,209,160210,130.45,Austria1991,,"173,794,177,725","$23,808",G.I. Generation
+Serbia,1999,male,75+ years,168,129749,129.48,Serbia1999,,"18,409,364,147","$2,570",G.I. Generation
+Austria,1987,male,75+ years,208,161591,128.72,Austria1987,,"124,168,442,860","$17,415",G.I. Generation
+Lithuania,1998,male,35-54 years,557,442825,125.78,Lithuania1998,,"11,240,360,898","$3,354",Boomers
+Hungary,1998,male,75+ years,238,189405,125.66,Hungary1998,,"48,770,466,839","$5,010",G.I. Generation
+Estonia,1995,male,35-54 years,227,180939,125.46,Estonia1995,0.719,"4,373,665,146","$3,224",Boomers
+Croatia,2004,male,75+ years,111,88600,125.28,Croatia2004,,"41,574,530,816","$9,829",Silent
+Bulgaria,1992,male,75+ years,206,164500,125.23,Bulgaria1992,,"10,350,515,464","$1,287",G.I. Generation
+Sri Lanka,1985,male,75+ years,144,115000,125.22,Sri Lanka1985,0.597,"5,978,460,972",$431,G.I. Generation
+Cuba,1994,male,75+ years,246,196500,125.19,Cuba1994,,"28,448,326,757","$2,820",G.I. Generation
+Estonia,1996,male,75+ years,22,17605,124.96,Estonia1996,,"4,746,109,767","$3,536",G.I. Generation
+Austria,1995,male,75+ years,184,147262,124.95,Austria1995,0.815,"241,038,283,063","$32,237",G.I. Generation
+Estonia,1999,male,75+ years,23,18414,124.9,Estonia1999,,"5,726,897,998","$4,361",G.I. Generation
+Republic of Korea,2014,male,75+ years,1090,875829,124.45,Republic of Korea2014,,"1,411,333,926,201","$29,120",Silent
+Cuba,1995,male,75+ years,248,199400,124.37,Cuba1995,0.653,"30,429,803,651","$2,993",G.I. Generation
+Austria,1996,male,75+ years,188,151691,123.94,Austria1996,,"237,250,948,791","$31,660",G.I. Generation
+Lithuania,1998,male,55-74 years,345,278617,123.83,Lithuania1998,,"11,240,360,898","$3,354",Silent
+Sri Lanka,1986,male,75+ years,145,117200,123.72,Sri Lanka1986,,"6,405,210,564",$454,G.I. Generation
+Cuba,1998,male,75+ years,253,204881,123.49,Cuba1998,,"25,736,331,247","$2,497",G.I. Generation
+Lithuania,2001,male,35-54 years,559,453841,123.17,Lithuania2001,,"12,252,498,921","$3,719",Boomers
+Bulgaria,1989,male,75+ years,213,174000,122.41,Bulgaria1989,,"21,988,444,444","$2,617",G.I. Generation
+Estonia,1996,male,35-54 years,217,178056,121.87,Estonia1996,,"4,746,109,767","$3,536",Boomers
+Lithuania,1996,male,55-74 years,336,275843,121.81,Lithuania1996,,"8,385,109,020","$2,484",Silent
+France,1986,male,75+ years,1465,1207600,121.32,France1986,,"771,470,783,218","$14,940",G.I. Generation
+Hungary,2002,male,75+ years,254,209732,121.11,Hungary2002,,"67,716,887,203","$6,995",Silent
+Slovenia,2000,male,75+ years,36,29760,120.97,Slovenia2000,0.824,"20,342,201,356","$10,783",G.I. Generation
+Hungary,2005,male,75+ years,269,222774,120.75,Hungary2005,0.802,"113,035,361,317","$11,764",Silent
+France,1985,male,75+ years,1522,1263200,120.49,France1985,0.741,"553,138,414,367","$10,765",G.I. Generation
+Cuba,1992,male,75+ years,227,188700,120.3,Cuba1992,,"22,085,858,243","$2,227",G.I. Generation
+Hungary,2004,male,75+ years,262,218145,120.1,Hungary2004,,"104,066,609,518","$10,806",Silent
+Austria,1994,male,75+ years,174,145328,119.73,Austria1994,,"203,535,242,742","$27,274",G.I. Generation
+Montenegro,2009,male,75+ years,15,12568,119.35,Montenegro2009,,"4,159,330,370","$7,023",Silent
+Serbia,2000,male,75+ years,162,135980,119.14,Serbia2000,0.71,"6,540,247,190",$915,G.I. Generation
+Serbia,1998,male,75+ years,147,123440,119.09,Serbia1998,,"18,284,194,680","$2,547",G.I. Generation
+Latvia,2000,male,75+ years,37,31135,118.84,Latvia2000,0.727,"7,937,758,980","$3,494",G.I. Generation
+Lithuania,1995,male,55-74 years,325,274196,118.53,Lithuania1995,0.701,"7,870,782,261","$2,324",Silent
+Cuba,1997,male,75+ years,240,203095,118.17,Cuba1997,,"25,366,200,000","$2,472",G.I. Generation
+Bulgaria,1988,male,75+ years,204,172700,118.12,Bulgaria1988,,"22,555,941,176","$2,688",G.I. Generation
+Latvia,1995,male,55-74 years,239,203600,117.39,Latvia1995,0.67,"5,788,368,511","$2,438",Silent
+Lithuania,2000,male,55-74 years,324,276055,117.37,Lithuania2000,0.754,"11,539,211,480","$3,481",Silent
+Russian Federation,1994,male,35-54 years,22338,19044200,117.3,Russian Federation1994,,"395,077,301,248","$2,853",Boomers
+Lithuania,2001,male,55-74 years,322,276422,116.49,Lithuania2001,,"12,252,498,921","$3,719",Silent
+Austria,1992,male,75+ years,179,153805,116.38,Austria1992,,"195,078,126,346","$26,450",G.I. Generation
+Slovenia,1997,male,75+ years,31,26800,115.67,Slovenia1997,,"20,749,140,606","$11,014",G.I. Generation
+Bulgaria,1998,male,75+ years,201,174000,115.52,Bulgaria1998,,"14,630,992,956","$1,852",G.I. Generation
+Singapore,1986,female,75+ years,30,26000,115.38,Singapore1986,,"18,569,292,305","$7,805",G.I. Generation
+Lithuania,2003,male,35-54 years,529,458658,115.34,Lithuania2003,,"18,802,576,988","$5,778",Boomers
+Slovenia,2003,male,75+ years,40,34740,115.14,Slovenia2003,,"29,697,448,108","$15,568",Silent
+Uruguay,2002,male,75+ years,78,67798,115.05,Uruguay2002,,"13,606,494,599","$4,439",Silent
+Slovenia,1996,male,75+ years,30,26100,114.94,Slovenia1996,,"21,480,023,017","$11,346",G.I. Generation
+Bulgaria,1996,male,75+ years,191,166200,114.92,Bulgaria1996,,"10,109,612,142","$1,270",G.I. Generation
+Bulgaria,1991,male,75+ years,203,176700,114.88,Bulgaria1991,,"10,943,548,387","$1,298",G.I. Generation
+Slovenia,2006,male,75+ years,48,41789,114.86,Slovenia2006,,"39,587,732,029","$20,634",Silent
+Serbia,2001,male,75+ years,163,143189,113.84,Serbia2001,,"12,267,175,481","$1,718",Silent
+Singapore,1995,male,75+ years,32,28200,113.48,Singapore1995,0.773,"87,890,009,877","$31,783",G.I. Generation
+France,1987,male,75+ years,1491,1314800,113.4,France1987,,"934,173,305,686","$17,999",G.I. Generation
+Latvia,1997,male,75+ years,35,30900,113.27,Latvia1997,,"6,525,676,264","$2,771",G.I. Generation
+Cuba,1996,male,75+ years,228,201400,113.21,Cuba1996,,"25,017,300,000","$2,443",G.I. Generation
+Estonia,1995,male,75+ years,20,17701,112.99,Estonia1995,0.719,"4,373,665,146","$3,224",G.I. Generation
+Russian Federation,1995,male,35-54 years,21706,19249600,112.76,Russian Federation1995,,"395,531,066,563","$2,844",Boomers
+Austria,1990,male,75+ years,186,165206,112.59,Austria1990,0.794,"166,463,386,663","$23,020",G.I. Generation
+Hungary,2008,male,75+ years,263,233660,112.56,Hungary2008,,"157,998,423,132","$16,540",Silent
+Bulgaria,1994,male,75+ years,175,155600,112.47,Bulgaria1994,,"9,697,416,974","$1,213",G.I. Generation
+Estonia,1997,male,75+ years,20,17817,112.25,Estonia1997,,"5,066,240,419","$3,806",G.I. Generation
+Austria,1988,male,75+ years,183,164555,111.21,Austria1988,,"133,339,397,080","$18,663",G.I. Generation
+Czech Republic,1990,male,75+ years,198,179200,110.49,Czech Republic1990,0.761,"40,477,403,220","$4,168",G.I. Generation
+Hungary,2003,male,75+ years,236,213793,110.39,Hungary2003,,"85,324,771,841","$8,840",Silent
+Lithuania,2001,male,75+ years,57,51713,110.22,Lithuania2001,,"12,252,498,921","$3,719",Silent
+Russian Federation,1994,male,75+ years,1412,1281400,110.19,Russian Federation1994,,"395,077,301,248","$2,853",G.I. Generation
+Slovenia,2005,male,75+ years,43,39044,110.13,Slovenia2005,0.857,"36,346,974,008","$19,012",Silent
+Singapore,1989,male,75+ years,25,22800,109.65,Singapore1989,,"30,423,573,842","$12,514",G.I. Generation
+Cuba,1999,male,75+ years,226,206274,109.56,Cuba1999,,"28,364,615,242","$2,741",G.I. Generation
+Estonia,1997,male,35-54 years,193,176261,109.5,Estonia1997,,"5,066,240,419","$3,806",Boomers
+Hungary,2007,male,75+ years,252,230464,109.34,Hungary2007,,"139,850,794,387","$14,609",Silent
+France,1988,male,75+ years,1470,1348100,109.04,France1988,,"1,018,847,043,277","$19,534",G.I. Generation
+Austria,1986,male,75+ years,173,158694,109.01,Austria1986,,"99,036,165,210","$13,911",G.I. Generation
+Croatia,2008,male,75+ years,115,105525,108.98,Croatia2008,,"70,481,451,449","$16,680",Silent
+Latvia,1995,male,35-54 years,339,311700,108.76,Latvia1995,0.67,"5,788,368,511","$2,438",Boomers
+Serbia,2002,male,75+ years,165,151768,108.72,Serbia2002,,"16,116,843,146","$2,258",Silent
+Serbia,2005,male,75+ years,195,180107,108.27,Serbia2005,0.741,"26,252,007,830","$3,719",Silent
+Sri Lanka,1998,male,75+ years,214,197754,108.22,Sri Lanka1998,,"15,794,972,847",$935,G.I. Generation
+Croatia,2002,male,75+ years,84,77800,107.97,Croatia2002,,"26,878,499,206","$6,373",Silent
+Slovenia,2012,male,75+ years,60,55583,107.95,Slovenia2012,0.878,"46,352,802,766","$23,820",Silent
+Croatia,1998,male,75+ years,78,72300,107.88,Croatia1998,,"25,432,144,406","$6,015",G.I. Generation
+Slovenia,1999,male,75+ years,31,28800,107.64,Slovenia1999,,"22,689,994,990","$12,041",G.I. Generation
+Lithuania,2004,male,35-54 years,491,457735,107.27,Lithuania2004,,"22,649,930,576","$7,028",Boomers
+France,1989,male,75+ years,1476,1376800,107.21,France1989,,"1,025,211,803,414","$19,558",G.I. Generation
+Belarus,1996,male,35-54 years,1391,1298200,107.15,Belarus1996,,"14,756,846,154","$1,524",Boomers
+Russian Federation,1993,male,35-54 years,20256,18908000,107.13,Russian Federation1993,,"435,083,713,851","$3,160",Boomers
+Latvia,1996,male,55-74 years,219,205100,106.78,Latvia1996,,"5,970,044,666","$2,526",Silent
+Slovenia,2002,male,75+ years,35,32799,106.71,Slovenia2002,,"23,563,576,758","$12,362",Silent
+Luxembourg,1994,male,75+ years,8,7500,106.67,Luxembourg1994,,"18,325,791,415","$48,610",G.I. Generation
+Lithuania,2005,male,55-74 years,289,271641,106.39,Lithuania2005,0.806,"26,125,575,942","$8,229",Silent
+Belarus,1996,male,55-74 years,859,809000,106.18,Belarus1996,,"14,756,846,154","$1,524",Silent
+Latvia,1995,male,75+ years,33,31100,106.11,Latvia1995,0.67,"5,788,368,511","$2,438",G.I. Generation
+France,1990,male,75+ years,1441,1360900,105.89,France1990,0.779,"1,269,179,616,914","$23,968",G.I. Generation
+Lithuania,1997,male,55-74 years,294,277983,105.76,Lithuania1997,,"10,120,274,493","$3,008",Silent
+Russian Federation,1996,male,35-54 years,20562,19507100,105.41,Russian Federation1996,,"391,719,993,757","$2,813",Boomers
+Slovenia,2011,male,75+ years,56,53258,105.15,Slovenia2011,0.877,"51,290,792,018","$26,377",Silent
+Lithuania,2003,male,55-74 years,288,274066,105.08,Lithuania2003,,"18,802,576,988","$5,778",Silent
+Seychelles,2002,male,75+ years,1,953,104.93,Seychelles2002,,"697,518,248","$9,070",Silent
+Uruguay,1999,male,75+ years,66,62922,104.89,Uruguay1999,,"23,983,945,191","$7,903",G.I. Generation
+Bulgaria,1995,male,75+ years,169,161300,104.77,Bulgaria1995,0.696,"13,063,422,619","$1,636",G.I. Generation
+Croatia,1995,male,75+ years,77,73500,104.76,Croatia1995,0.694,"22,387,561,845","$4,978",G.I. Generation
+Russian Federation,1993,male,75+ years,1364,1302200,104.75,Russian Federation1993,,"435,083,713,851","$3,160",G.I. Generation
+Slovenia,1995,male,75+ years,27,25800,104.65,Slovenia1995,0.782,"21,273,055,398","$11,291",G.I. Generation
+Croatia,1999,male,75+ years,77,73700,104.48,Croatia1999,,"23,386,945,597","$5,459",G.I. Generation
+Slovenia,1998,male,75+ years,29,27800,104.32,Slovenia1998,,"22,125,435,372","$11,767",G.I. Generation
+Kazakhstan,1994,male,75+ years,94,90300,104.1,Kazakhstan1994,,"21,250,839,258","$1,395",G.I. Generation
+Croatia,2000,male,75+ years,77,74000,104.05,Croatia2000,0.749,"21,774,273,832","$5,288",G.I. Generation
+Estonia,1998,male,55-74 years,123,118242,104.02,Estonia1998,,"5,617,109,245","$4,250",Silent
+Luxembourg,1991,male,75+ years,8,7700,103.9,Luxembourg1991,,"14,321,878,795","$39,465",G.I. Generation
+Russian Federation,1994,male,55-74 years,11431,11006300,103.86,Russian Federation1994,,"395,077,301,248","$2,853",Silent
+Bulgaria,1986,male,75+ years,172,165700,103.8,Bulgaria1986,,"20,249,294,118","$2,413",G.I. Generation
+France,1993,male,75+ years,1311,1265300,103.61,France1993,,"1,322,815,612,694","$24,521",G.I. Generation
+Serbia,2006,male,75+ years,196,189274,103.55,Serbia2006,,"30,607,991,862","$4,353",Silent
+Belgium,1987,male,75+ years,222,214800,103.35,Belgium1987,,"150,194,077,688","$16,165",G.I. Generation
+Lithuania,2005,male,35-54 years,469,453800,103.35,Lithuania2005,0.806,"26,125,575,942","$8,229",Boomers
+France,1992,male,75+ years,1328,1285400,103.31,France1992,,"1,401,465,923,172","$26,136",G.I. Generation
+Lithuania,2002,male,55-74 years,285,275961,103.28,Lithuania2002,,"14,278,357,284","$4,360",Silent
+Russian Federation,1989,male,75+ years,1393,1349100,103.25,Russian Federation1989,,"506,500,173,960","$3,740",G.I. Generation
+Serbia,2004,male,75+ years,176,170536,103.2,Serbia2004,,"24,861,483,281","$3,508",Silent
+Maldives,2001,female,75+ years,1,976,102.46,Maldives2001,,"870,179,739","$3,406",Silent
+Lithuania,1999,male,55-74 years,284,277228,102.44,Lithuania1999,,"10,972,878,636","$3,292",Silent
+Guyana,2010,male,75+ years,5,4885,102.35,Guyana2010,0.624,"2,273,225,042","$3,384",Silent
+Czech Republic,1992,male,75+ years,165,161400,102.23,Czech Republic1992,,"34,590,052,812","$3,573",G.I. Generation
+Belarus,1997,male,55-74 years,819,803300,101.95,Belarus1997,,"14,128,408,566","$1,458",Silent
+Austria,1998,male,75+ years,165,162132,101.77,Austria1998,,"218,259,904,402","$28,972",G.I. Generation
+Czech Republic,1993,male,75+ years,155,152300,101.77,Czech Republic1993,,"40,614,350,197","$4,186",G.I. Generation
+Slovenia,2007,male,75+ years,45,44241,101.72,Slovenia2007,,"48,114,688,201","$24,964",Silent
+Sri Lanka,2000,male,75+ years,200,196877,101.59,Sri Lanka2000,0.679,"16,330,814,180",$953,G.I. Generation
+Hungary,2010,male,75+ years,242,238269,101.57,Hungary2010,0.821,"130,922,638,689","$13,761",Silent
+Belgium,1985,male,75+ years,214,210800,101.52,Belgium1985,0.774,"86,730,038,793","$9,356",G.I. Generation
+Czech Republic,1994,male,75+ years,150,148000,101.35,Czech Republic1994,,"47,554,674,591","$4,891",G.I. Generation
+Austria,1997,male,75+ years,159,156997,101.28,Austria1997,,"212,790,348,405","$28,325",G.I. Generation
+Belarus,1998,male,55-74 years,794,784600,101.2,Belarus1998,,"15,222,012,660","$1,570",Silent
+Aruba,2000,male,75+ years,1,989,101.11,Aruba2000,,"1,873,452,514","$22,333",G.I. Generation
+Latvia,1996,male,75+ years,31,30700,100.98,Latvia1996,,"5,970,044,666","$2,526",G.I. Generation
+Estonia,1995,male,55-74 years,119,117994,100.85,Estonia1995,0.719,"4,373,665,146","$3,224",Silent
+Suriname,2010,male,75+ years,5,4994,100.12,Suriname2010,0.707,"4,368,398,048","$9,176",Silent
+Hungary,2012,male,75+ years,233,232766,100.1,Hungary2012,0.823,"127,856,647,108","$13,525",Silent

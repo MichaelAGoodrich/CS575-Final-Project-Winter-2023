@@ -1,0 +1,23 @@
+country,year,sex,age,suicides_no,population,suicides/100k pop,country-year,HDI for year,gdp_for_year ($),gdp_per_capita ($),generation
+Aruba,1995,male,75+ years,2,889,224.97,Aruba1995,,"1,320,670,391","$17,949",G.I. Generation
+Seychelles,2006,male,75+ years,2,976,204.92,Seychelles2006,,"1,016,418,229","$12,442",Silent
+Suriname,2012,male,75+ years,10,5346,187.06,Suriname2012,0.711,"4,980,000,000","$10,227",Silent
+Republic of Korea,2011,male,75+ years,1276,688365,185.37,Republic of Korea2011,,"1,202,463,682,634","$25,157",Silent
+Republic of Korea,2010,male,75+ years,1152,631853,182.32,Republic of Korea2010,,"1,094,499,338,703","$22,994",Silent
+Hungary,1992,male,75+ years,317,178482,177.61,Hungary1992,,"38,724,945,368","$3,970",G.I. Generation
+Hungary,1993,male,75+ years,300,168944,177.57,Hungary1993,,"40,119,073,326","$4,116",G.I. Generation
+Hungary,1991,male,75+ years,333,188235,176.91,Hungary1991,,"34,748,508,332","$3,561",G.I. Generation
+Republic of Korea,2005,male,75+ years,780,442349,176.33,Republic of Korea2005,,"898,137,194,716","$19,460",Silent
+Hungary,1994,male,75+ years,292,165660,176.26,Hungary1994,,"43,160,392,124","$4,431",G.I. Generation
+Republic of Korea,2009,male,75+ years,1006,578635,173.86,Republic of Korea2009,,"901,934,953,365","$19,036",Silent
+Republic of Korea,2007,male,75+ years,860,497517,172.86,Republic of Korea2007,,"1,122,679,154,632","$23,982",Silent
+Republic of Korea,2004,male,75+ years,722,417832,172.8,Republic of Korea2004,,"764,880,644,711","$16,708",Silent
+Republic of Korea,2003,male,75+ years,674,394465,170.86,Republic of Korea2003,,"680,520,724,062","$14,971",Silent
+Hungary,1995,male,75+ years,282,169919,165.96,Hungary1995,0.74,"46,418,916,500","$4,767",G.I. Generation
+Hungary,1999,male,75+ years,302,185652,162.67,Hungary1999,,"49,170,434,391","$5,147",G.I. Generation
+Hungary,1997,male,75+ years,296,182808,161.92,Hungary1997,,"47,290,180,589","$4,856",G.I. Generation
+Saint Vincent and Grenadines,2002,male,75+ years,2,1270,157.48,Saint Vincent and Grenadines2002,,"461,883,444","$4,723",Silent
+Republic of Korea,2008,male,75+ years,828,534462,154.92,Republic of Korea2008,,"1,002,219,052,968","$21,278",Silent
+Republic of Korea,2006,male,75+ years,722,466922,154.63,Republic of Korea2006,,"1,011,797,457,139","$21,753",Silent
+Republic of Korea,2012,male,75+ years,1137,745816,152.45,Republic of Korea2012,,"1,222,807,284,485","$25,464",Silent
+Lithuania,1996,male,35-54 years,664,438770,151.33,Lithuania1996,,"8,385,109,020","$2,484",Boomers
