@@ -13,8 +13,12 @@ class GraphAnalytics:
 
         print("assortativity coefficient: ", nx.degree_assortativity_coefficient(self.G))
 
-        #print("diameter: ", nx.diameter(self.G))
-        #print("radius: ", nx.radius(self.G))
+        print("diameter: ", nx.diameter(self.G))
+        print("radius: ", nx.radius(self.G))
+
+        self.showCommunities()
+
+        self.get_scale_free_plot()
 
     def showCommunities(self):
         pos = nx.nx_agraph.graphviz_layout(self.G, prog='neato')
@@ -31,7 +35,7 @@ class GraphAnalytics:
         #age_line.set_label('Country, Age, Sex')
         year_line, = ax.plot(-np.inf, -np.inf, 'm.', markersize=10)
         #year_line.set_label('Suicide Bin')
-        ax.legend()
+        #ax.legend()
         plt.show()
 
     def getColormap_by_Louvain_Communities(self, partition):
@@ -58,3 +62,29 @@ class GraphAnalytics:
                     else:
                         self.colormap[j] = 'k'
         return self.colormap
+
+    def plot_degree_histogram(self, g, normalized=True):
+        print("Creating histogram...")
+        aux_y = nx.degree_histogram(g)
+        
+        aux_x = np.arange(0,len(aux_y)).tolist()
+        
+        n_nodes = g.number_of_nodes()
+        
+        if normalized:
+            for i in range(len(aux_y)):
+                aux_y[i] = aux_y[i]/n_nodes
+        
+        return aux_x, aux_y
+
+    def get_scale_free_plot(self):
+
+        aux_x, aux_y = self.plot_degree_histogram(self.G, normalized=False)
+
+        plt.title('\nDegree Distribution (log-log scale)')
+        plt.xlabel('Degree\n(log scale)')
+        plt.ylabel('Number of Nodes\n(log scale)')
+        plt.xscale("log")
+        plt.yscale("log")
+        plt.plot(aux_x, aux_y, 'o')
+        plt.show()
