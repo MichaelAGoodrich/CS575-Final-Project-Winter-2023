@@ -37,7 +37,7 @@ def main():
     ax.legend()
     plt.show()
 
-    H = graph_database.extractProjectionGraph('country, age, sex')
+    H = graph_database.extractProjectionGraph('country, age, sex', False)
     H = graph_database.extractLargestComponent(H)  # let's only worry about the largest component!
     pos = nx.nx_agraph.graphviz_layout(H, prog='neato')
     # I edited the following function to use any graph (ie the largest component) by default will use the whole graph

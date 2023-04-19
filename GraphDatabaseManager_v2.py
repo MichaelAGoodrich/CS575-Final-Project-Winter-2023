@@ -34,14 +34,23 @@ class GraphManager:
         H = self.__edgesetToSubgraph(edge_set)
         return H
 
-    def extractProjectionGraph(self, categories):
+    def extractProjectionGraph(self, categories, AdjacentCAS):
         """ Project out the movie to see relationships
             between other database categories
         """
-        if categories is list:
-            edge_set = self.__extractProjectionEdges(categories)
+        
+        if AdjacentCAS:
+            if categories is list:
+                edge_set = self.__extractAdjacentCASEdges(categories)
+            else:
+                edge_set = self.__extractAdjacentCASEdges([categories])
+        
         else:
-            edge_set = self.__extractProjectionEdges([categories])
+            if categories is list:
+                edge_set = self.__extractProjectionEdges(categories)
+            else:
+                edge_set = self.__extractProjectionEdges([categories])
+        
         H = self.__edgesetToSubgraph(edge_set)
         return H
 
@@ -163,6 +172,31 @@ class GraphManager:
             for node_destination in node_destinations:
                 edge_set.add((node_source, node_destination))
         return edge_set
+    
+    def __extractAdjacentCASEdges(self, categories):
+    # Create sorted bins for each node based on category
+        bins = {}
+        for category in categories:
+            node_list = list(self.nodes_by_attribute_dict[category])
+            node_list.sort()
+            bins[category] = node_list
+
+        # Create a graph and add nodes to it
+        H = nx.Graph()
+        for node in self.G.nodes:
+            if node in node_list:
+                H.add_node(node)
+
+        # Add edges between nodes belonging to adjacent bins
+        for category in bins:
+            node_list = bins[category]
+            for i, node in enumerate(node_list):
+                if i > 0:
+                    H.add_edge(node, node_list[i-1])
+                if i < len(node_list)-1:
+                    H.add_edge(node, node_list[i+1])
+
+        return H.edges()
 
     @staticmethod
     def __get_node_type(categories):
