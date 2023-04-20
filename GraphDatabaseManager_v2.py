@@ -1,18 +1,5 @@
-""" Represents the database as a graph.
-    Construct the graph database
-    Utilities for viewing graphs and subgraphs.
-    Utilities for performing projections.   
-
-    Michael A. Goodrich
-    Brigham Young University
-
-    March 2023
-"""
-import networkx as nx
-from matplotlib import pyplot as plt
-
-from DatabaseManager import DatabaseManager
-import numpy as np
+from collections import OrderedDict
+import csv
 
 
 class GraphManager:
@@ -34,22 +21,18 @@ class GraphManager:
         H = self.__edgesetToSubgraph(edge_set)
         return H
 
-    def extractProjectionGraph(self, categories, AdjacentCAS):
+    def extractProjectionGraph(self, category, AdjacentCAS):
         """ Project out the movie to see relationships
             between other database categories
         """
-        
         if AdjacentCAS:
-            if categories is list:
-                edge_set = self.__extractAdjacentCASEdges(categories)
-            else:
-                edge_set = self.__extractAdjacentCASEdges([categories])
-        
+            borderData = self.getBorderData('datasets/GEODATASOURCE-COUNTRY-BORDERS.CSV')
+            edge_set = self.__extractAdjacentCASEdges(category, borderData)
+            
         else:
-            if categories is list:
-                edge_set = self.__extractProjectionEdges(categories)
-            else:
-                edge_set = self.__extractProjectionEdges([categories])
+            edge_set = self.__extractProjectionEdges(category)
+
+        print("edgeset: ", edge_set)
         
         H = self.__edgesetToSubgraph(edge_set)
         return H
@@ -173,13 +156,42 @@ class GraphManager:
                 edge_set.add((node_source, node_destination))
         return edge_set
     
-    def __extractAdjacentCASEdges(self, categories):
-    # Create sorted bins for each node based on category
-        bins = {}
-        for category in categories:
-            node_list = list(self.nodes_by_attribute_dict[category])
-            node_list.sort()
-            bins[category] = node_list
+    def getBorderData(self, filename):
+        borders = {}
+
+        with open(filename) as csvfile:
+            reader = csv.reader(csvfile)
+            next(reader)  # skip header row
+            for row in reader:
+                country_code, country_name, border_code, border_name = row
+                if border_name:
+                    if country_name not in borders:
+                        borders[country_name] = set()
+                    borders[country_name].add(border_name)
+                    if border_name not in borders:
+                        borders[border_name] = set()
+                    borders[border_name].add(country_name)
+        
+        return borders
+
+    
+    def __extractAdjacentCASEdges(self, category, borders):
+        # Create sorted bins for each node based on category
+        bins = OrderedDict([
+            ("5-14", set()),
+            ("15-24", set()),
+            ("25-34", set()),
+            ("35-54", set()),
+            ("55-74", set()),
+            ("75+", set())
+        ])
+        node_list = list(self.nodes_by_attribute_dict[category])
+        
+        for node in node_list:
+            age = node.split(", ")[1].split(" ")[0]
+            bins[age].add(node)
+        
+        bins = [v for k, v in bins.items()]
 
         # Create a graph and add nodes to it
         H = nx.Graph()
@@ -187,14 +199,31 @@ class GraphManager:
             if node in node_list:
                 H.add_node(node)
 
-        # Add edges between nodes belonging to adjacent bins
-        for category in bins:
-            node_list = bins[category]
-            for i, node in enumerate(node_list):
-                if i > 0:
-                    H.add_edge(node, node_list[i-1])
-                if i < len(node_list)-1:
-                    H.add_edge(node, node_list[i+1])
+        # Add edges between nodes belonging to adjacent bins or with neighboring countries
+        for node in node_list:
+            country = node.split(",")[0]
+            for i, bin in enumerate(bins):
+                if node in bin:
+                    break
+            if i > 0:
+                if country in borders:
+                    for adj_node in bins[i-1]:
+                        adj_country = adj_node.split(",")[0] 
+                        if adj_country in borders[country]:
+                            H.add_edge(node, adj_node)
+            if i < len(bins)-1:
+                if country in borders:
+                    for adj_node in bins[i+1]:
+                        adj_country = adj_node.split(",")[0] 
+                        if adj_country in borders[country]:
+                            H.add_edge(node, adj_node)
+            
+            if country in borders:
+                for adj_node in bins[i]:
+                    if not adj_node==node:
+                        adj_country = adj_node.split(",")[0] 
+                        if adj_country in borders[country]:
+                            H.add_edge(node, adj_node)
 
         return H.edges()
 
@@ -210,4 +239,3 @@ class GraphManager:
         for categories in self.node_types:
             cat_types += [self.__get_node_type(categories)]
         return cat_types
-
